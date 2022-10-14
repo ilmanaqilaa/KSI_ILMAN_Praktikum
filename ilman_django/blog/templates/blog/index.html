@@ -1,1 +1,23 @@
-<h2>HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ILMAN DJANGO</title>
+    <link rel="stylesheet" type="text/css" href="% static 'css/style.css' %">
+    <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
+</head>
+<body>
+{% include "blog/navbar.html" %}
+
+    </nav>
+    <center>
+    <h2>HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
+    <img clas="center" src="{% static "image/testing.jpg" %}" alt="" />
+</center>
+    <script>src="{% static 'vendor/jquery/jquery.js' %}"</script>
+    <script>src="{% static 'vendor/popper/popper.js' %}"</script>
+    <script>src="{% static 'vendor/bootstrap/bootstrap.js' %}"</script>
+</body>
+</html>
