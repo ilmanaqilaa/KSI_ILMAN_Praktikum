@@ -1,4 +1,6 @@
+{% comment %} {% extends 'blog/base.html' %} {% endcomment %}
 {% load static %}
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,6 +12,15 @@
 </head>
 <body>
 {% include "blog/navbar.html" %}
+
+
+
+{% comment %} {% block header %}
+    
+    <h1>halo</h1>
+    <p>Testing</p>
+
+{% endblock header %} {% endcomment %}
 
     </nav>
     <center>
