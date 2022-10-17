@@ -1,0 +1,19 @@
+.opening {
+        color: red;
+}
+
+.description{
+        color: green;
+}
+
+.year{
+        color: purple;
+}
+
+.definition{
+        color: aqua;
+}
+
+.center{
+        width: 50%;
+}
