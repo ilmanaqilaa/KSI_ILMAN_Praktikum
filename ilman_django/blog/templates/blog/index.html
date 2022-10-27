@@ -11,6 +11,18 @@
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
 </head>
 <body>
+
+    {% block content-1 %}
+    {% for v in post %}
+        <div class=" bg-white" style="height:400px">
+            <h1>{{ v.title }}</h1>
+            <p>{{ v.body }}</p>
+            <p>{{ v.email }}</p>
+            <p>{{ v.slug }}</p>
+        </div>
+    {% endfor %}
+    {% endblock content-1 %}
+    
 {% include "blog/navbar.html" %}
 
 
