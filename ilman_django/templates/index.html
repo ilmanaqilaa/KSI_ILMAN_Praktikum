@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
 </head>
 <body>
-
+    
     {% include "blog/navbar.html" %}
 <br>
 <center>
@@ -21,7 +21,7 @@
     <br>
 
 <div class="col d-flex justify-content-center">    
-    <div class="card" style="width: 18rem;" margin="1mm">    
+    <div class="card shadow p-3 mb-5 bg-white rounded" style="width: 18rem;" margin="1mm">    
         <div class="card-body">
             <form method="post">
                 {% csrf_token %}
@@ -33,7 +33,9 @@
                     <label for="exampleInputPassword1" class="form-label">Alamat</label>
                     <input type="text" class="form-control" id="exampleInputPassword1" name="address">
                 </div>
+                <center>
                 <button type="submit" class="btn btn-primary">Submit</button>
+            </center>
             </form>
         </div>
     </div>

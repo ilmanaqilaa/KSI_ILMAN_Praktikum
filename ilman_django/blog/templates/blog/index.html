@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ILMAN DJANGO</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
 </head>
 <body>
@@ -17,38 +17,59 @@
 
 
 </nav>
-<h2>HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
+<br>
+<h2 style="text-align: center;">HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
+<br><br>
+<center>
+    <img class="gambar" src="{% static "image/testing.jpg" %}" alt="">
+</center>
+<br><br>
+<div style="text-align: center;">
 <h1 class="opening">Hi, This's new project by 1204055_Muhammad Ilman Aqilaa</h1>
 <h1 class="description">This is a picture of Django</h1>
 <h2 class="year">Django was created in the fall of 2003</h2>
 <h3 class="definition">Django is a lightweight and standalone web server for development and testing</h3>
+</div>
 <a href="https://www.djangoproject.com/" target="_blank">Ayo kita Django</a>
 
     {% block content-1 %}
     {% for v in post %}
-        <div class=" bg-white" style="height:400px">
-            <h1>{{ v.title }}</h1>
-            <p>{{ v.body }}</p>
-            <p>{{ v.email }}</p>
-            <p>{{ v.slug }}</p>
+    <div>
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">No</th>
+                <th scope="col">Title</th>
+                <th scope="col">Body</th>
+                <th scope="col">Email</th>
+                <th scope="col">Slug</th>
+              </tr>
+            </thead>
+            <tbody class="table-group-divider">
+              <tr>
+                <th scope="row">1</th>
+                <td>{{ v.title }}</td>
+                <td>{{ v.body }}</td>
+                <td>{{ v.email }}</td>
+                <td>{{ v.slug }}</td>
+              </tr>
+            </tbody>
+          </table>
         </div>
     {% endfor %}
     {% endblock content-1 %}
     
 
 
-
-{% comment %} {% block header %}
+<!-- {% comment %} {% block header %}
     
     <h1>halo</h1>
     <p>Testing</p>
 
-{% endblock header %} {% endcomment %}
+{% endblock header %} {% endcomment %} -->
 
 
-    <center>
-    <img src="{% static "image/testing.jpg" %}" alt="">
-</center>
+
 
 
 

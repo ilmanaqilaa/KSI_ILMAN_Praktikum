@@ -1,15 +1,6 @@
-.opening {
-        color: red;
-}
-
-.description{
-        color: green;
-}
-
-.year{
-        color: purple;
-}
-
-.definition{
-        color: aqua;
+.gambar{
+        width: 40%;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10%;
 }
