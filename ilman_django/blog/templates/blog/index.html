@@ -11,18 +11,18 @@
     <link rel="stylesheet" href="{% static 'vendor/bootstrap/bootstrap.css' %}">
 </head>
 <body>
+    {% include "blog/navbar.html" %}
 
-    <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'index' %}" title="">home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'blog:index' %}" title="">blog</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="{% url 'about:index' %}">about</a>
-        </li>
-    </ul>
+    
+
+
+</nav>
+<h2>HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
+<h1 class="opening">Hi, This's new project by 1204055_Muhammad Ilman Aqilaa</h1>
+<h1 class="description">This is a picture of Django</h1>
+<h2 class="year">Django was created in the fall of 2003</h2>
+<h3 class="definition">Django is a lightweight and standalone web server for development and testing</h3>
+<a href="https://www.djangoproject.com/" target="_blank">Ayo kita Django</a>
 
     {% block content-1 %}
     {% for v in post %}
@@ -35,7 +35,6 @@
     {% endfor %}
     {% endblock content-1 %}
     
-{% include "blog/navbar.html" %}
 
 
 
@@ -46,16 +45,15 @@
 
 {% endblock header %} {% endcomment %}
 
-    </nav>
-    <h2>HOLA INI ADALAH TESTING DJANGO ILMAN</h2>
-    <h1 class="opening">Hi, This's new project by 1204055_Muhammad Ilman Aqilaa</h1>
-    <h1 class="description">This is a picture of Django</h1>
-    <h2 class="year">Django was created in the fall of 2003</h2>
-    <h3 class="definition">Django is a lightweight and standalone web server for development and testing</h3>
-    <a href="https://www.djangoproject.com/" target="_blank">Ayo kita Django</a>
+
     <center>
     <img src="{% static "image/testing.jpg" %}" alt="">
 </center>
+
+
+
+
+
     <script>src="{% static 'vendor/jquery/jquery.js' %}"</script>
     <script>src="{% static 'vendor/popper/popper.js' %}"</script>
     <script>src="{% static 'vendor/bootstrap/bootstrap.js' %}"</script>
